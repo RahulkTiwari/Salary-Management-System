@@ -1,0 +1,288 @@
+
+<!-- select ,float,required-->
+<html>
+<head>
+<script type ="text/javascript">
+function callMe() {
+var username = document.getElementById("username").value;
+var pwd = document.getElementById("pwd").value;
+if (username =='') {
+alert("Please Enter Username");
+return false;
+}else if(pwd == '') {
+alert("Please Enter Password");
+return false;
+} else {
+return true;
+}
+}
+</script>
+<style>
+*{
+margin:0;
+}
+button:hover 
+{
+    opacity: 0.8;
+}
+h1
+{
+font-family:Fantasay;
+ background-color:DimGray;
+font-size:80px;
+height:120px;
+border-bottom:4px solid red;
+}
+.container 
+{
+    overflow: hidden;
+    background-color:#6A5ACD;
+    font-family: Arial;
+}
+
+.container a 
+{
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown 
+{
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn 
+{
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+}
+
+.container a:hover, .dropdown:hover .dropbtn 
+{
+ background-color: #DB7093;
+ opacity: 0.8;
+}
+
+.dropdown-content 
+{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 4px 4px 10px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a 
+{
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover 
+{
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content 
+{
+    display: block;
+}
+#span{font-size:20px; padding-top:10px;style="font-family:arial";
+  animation-duration:2s;
+  animation-name:colorChange;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes colorChange {
+  from {
+     color:gray;
+    
+  }
+
+  to {
+    color:#00FFFF;
+  }
+}
+#span1{font-size:30px;}
+.login
+{
+font-size:30px; 
+}
+.form{
+height: 55.5px;
+font-size:500%;
+padding-top:10px;
+padding-bottom: 50px;
+background-color:black;
+border-width:5px;
+text-align:center;
+}
+
+.form1{
+}
+.form2{
+width:347px;
+height:40px;
+}
+.form3{ 
+height:338px;
+border-style:solid;
+width:25.5%;
+background-color:#777;
+border-color:black;
+border-radius:10px;
+float:right;
+}
+.pssw{ 
+float:right; 
+padding-bottom:20px;
+}
+.create {
+background-color:#6699FF; 
+font-size:25px;
+color:BLACK;
+border-radius:10px;
+cursor: pointer;
+border:none;
+width:330;
+}
+.but {
+background-color:#6699FF;
+font-size:25px;
+color:BLACK;
+border-radius:10px;
+cursor: pointer;
+border:none;
+width:330;
+}
+ input[type=text],input[type=password]
+	{
+     width:60%;
+     padding: 10px 10px;<!-- padding in the text box i.e. top/right/bottom/left;-->
+	 <!--margin: 10cm -->text box in the environment --top,right,bottom,left;
+	 <!--border: 5px dotted red;-->
+	 border: solid black;
+	 border-radius: 1px;
+	 text-align:left;
+	
+	}
+th { color:white;}
+a:hover{color:white;}
+div.fixed {
+    
+   position: fixed;
+   top:250;  
+   left: 80;
+}
+
+</style>
+<title>
+Salary Management System
+</title>
+</head>
+<body bgcolor="#553">
+<div class="content">
+<div class="form"><font color="silver"><h1>Salary Management System</font></h1><br>
+</div>
+</br>
+<div class="container">
+<table  cellpadding="0.82" cellspacing="0.82" width="50%" height="3%">
+<TR>
+  <TH><a href="salary.html">Home</a></TH>
+  <TH>
+  <div class="dropdown">
+    <button class="dropbtn" ><B>Services</B></button>
+    <div class="dropdown-content">
+	<a href="ove.html">Overview</a>
+	
+      <a href="many1.html">Salary Calculator</a>
+      <a href="">Slip Generator</a>
+      <a href="">Search</a>
+      <a href="info.html">Information</a>
+
+    </div>
+  </div>
+</TH>
+   
+  <TH><a href="">FAQ</A></TH>
+<th><div class="dropdown">
+    <button class="dropbtn" ><b>About Us</b></button>
+    <div class="dropdown-content">
+<a href="">About this portal</a>
+<a href="">Visions, Mission, Values</a>
+<a href="">Who we are</a>
+<a href="">Right to Information</a>
+<a href="">Oraganization & Functions</a>
+    </div>
+  </div>
+    </TH>
+<th><a href="c.html">Contact Us</a>
+<th> <a href="adminlogin.html"> Admin Login</a>
+<th>
+</tr>
+</table>
+</div>
+<marquee> <span id="span"><h3>Welcome to Salary Management System!!!!!</h3></font><span></marquee>
+<div class="fixed">
+<span id="span1"><font color="white">"Earn Nicely,spent wisely and you will live happily."</font></span>
+<img class="mySlides" src="salary2.jpg" width="600" height="340">
+<img class="mySlides" src="salary1.jpg" width="600" height="340">
+<img class="mySlides" src="salary5.jpg" width="600" height="340">
+<img class="mySlides" src="salry4.jpg" width="600" height="340">
+<img class="mySlides" src="salary3.jpg" width="600" height="340">
+<img class="mySlides" src="download3.jpg" width="600" height="340">
+<img class="mySlides" src="download7.jpg" width="600" height="340">
+</div>
+<br>
+
+<br>
+<div class="form3">
+<div class="form1"> 
+<form action="login.php" method="POST">
+<br>
+<p class="login"><font color="white">&nbsp;Login</p><br>
+<label>&nbsp;&nbsp;<font size=5 color="white"><b>Username</b></font></label>&nbsp;<input type="text" placeholder="Enter Username" name="uname" id="username"><br><br>
+<label>&nbsp;&nbsp;<font size=5 color="white"><b>Password</b></font></label> &nbsp;<input type="password" placeholder="Enter Password" name="psw" id="pwd"><br><br>
+<center><button type="submit" class="but" onclick="return callMe()" >Login</button><br></center>
+</form>
+</div>
+
+
+<br>
+<div class="form2">
+<center><a href="signup.html"><button type="button" class="create">Register New User</button></a></center>
+</div>
+</div>
+</div>
+</body>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+</html>
+

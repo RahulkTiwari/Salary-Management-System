@@ -1,0 +1,125 @@
+<html>
+<title>Salary Calculator</title> 
+<script type = "text/javascript">
+function calc()
+{
+var  oh,PH,FP,ad,PD,bp,DA,HRA,GP,PF,Tax,Deduction,NetPay,name,id,desg;
+bp = parseInt(document.form1.bp.value);
+ad = parseInt(document.form1.ad.value);
+oh = parseInt(document.form1.oh.value);
+
+DA = bp * 0.5;
+HRA = bp * 0.5;
+GP= bp + DA + HRA;
+PF = GP * 0.02;
+Tax = GP * 0.01;
+Deduction = Tax + PF;
+NetPay = GP - Deduction;
+PD=NetPay/30;
+PH=PD/8;
+FP=((30-ad)*PD)+(oh*PH);
+        document.form1.da.value = DA;
+        document.form1.hra.value = HRA;
+        document.form1.gp.value = GP;
+        document.form1.pf.value = PF;
+        document.form1.tax.value = Tax;
+        document.form1.deduction.value = Deduction;
+        document.form1.netpay.value = NetPay;
+        document.form1.pd.value = PD; 
+        document.form1.fp.value = FP;
+        document.form1.ph.value = PH;
+}
+</script>
+
+<style>
+*{
+margin:0;
+}
+h1
+{
+font-family:Fantasay;
+background-color:	#E6E6FA;
+font-size:60px;
+height:90px;
+border-bottom:4px solid red;
+}
+.form{ text-align: center;}
+.sal{text-align: center }
+<br>
+<br>
+table{ border:5px solid black;}
+</style>
+<body>
+<div class="form"><h1>Salary Management System</h1><hr></div>
+<div class="sal"><h2>Salary Calculator</h2></div>
+<center>
+
+<table border="3">
+<form action="login.php" method="POST" name = "form1">
+
+
+
+<tr>
+<td>Basic Pay</td>
+<td><input type = "text" name = "bp" ></td>
+</tr>
+<td>Absent Days</td>
+<td><input type = "text" name = "ad" value="0"></td>
+</tr>
+<td>Overtime Hours</td>
+<td><input type = "text" name = "oh" value="0"></td>
+</tr>
+<tr>
+<td colspan = "10" align = "center">
+<input type = "button" name = "calculate"value = "Click Here To Calculate"onclick ="calc()"></td>
+</tr>
+ <tr>
+<td>Dearness Allowance </td>
+<td><input type = "text" name = "da" value="0"/></td>
+</tr>
+<tr>
+<td>House Rent Allowance </td>
+<td><input type = "text" name = "hra" value="0"></td>
+</tr>
+<tr>
+<td>Others</td>
+<td><input type = "text" name = "gp" value="0"></td>
+</tr>
+<tr>
+<td>Provident Fund</td>
+<td><input type = "text" name = "pf" value="0"></td>
+</tr>
+<tr>
+<td>Service Tax</td>
+<td><input type = "text" name = "tax" value="0"></td
+</tr>
+<tr>
+<td>Deduction</td>
+<td><input type = "text" name = "deduction" value="0"></td>
+</tr>
+<tr>
+<td>Payment Per Day</td>
+<td><input type = "text" name = "pd" value="0"></td>
+</tr>
+<tr>
+<td>Payment Per Hour</td>
+<td><input type = "text" name = "ph" value="0"></td>
+</tr>
+<tr>
+<td>Net Pay</td>
+<td><input type = "text" name = "netpay" value="0"/></td>
+</tr> 
+
+<tr>
+<td>Final Payment</td>
+<td><input type = "text" name = "fp" value="0" /></td>
+</tr>
+</table>
+      
+<table><tr><td><input type="reset" value=Reset></td></tr></table>
+</form>
+
+
+</center>
+</body>
+</html>
